@@ -52,6 +52,7 @@ cacheSolve <- function(x, ...) {
                 return(inv)
         }        
         data <- x$get()        
+        ##Compute inverse of matrix using solve function
         inv <- solve(data, ...)
         x$setinverse(inv)
         inv
